@@ -8,7 +8,8 @@ void Conecting2wifi()
     WIFI.begin(SSID, PASSWORD);
     while (WIFI.status() != WL_CONNECTED)
     {
-      delay(300); Serial.print(".");
+       delay(300); 
+       Serial.print(".");
     }
     Serial.println()
     Serial.println("WIFI Connected");
